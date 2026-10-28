@@ -46,6 +46,7 @@ Demo time - refer to architecture diagram during this
 
 
 If extra time
-* explain ticket renewal with `auks -g` to get ticket and `auks -a` to add new ticket
-* CPU only jobs require `--partition=cpu` flag
 * 2TB user limit and 7 day time limit on jobs so checkpointing is recommended
+* CPU only jobs require `--partition=cpu` flag
+* etiquette about not saturating or fragmenting the cluster
+* explain ticket renewal with `auks -g` to get ticket and `auks -a` to add new ticket
