@@ -26,17 +26,20 @@ Let's talk about the architecture
 * tickets are your access into your home directory, explain what tickets are
 
 
-Demo time - refer to architecture diagram
+Demo time - refer to architecture diagram during this
 
 * `ssh hpc1@wpia-lxhn.hpc.dide.ic.ac.uk` with password in the teams chat
 * `hostname` to see name of machine
 * `klist` to see your ticket
 * `mkdir <some-unique-string>` and then `cd <some-unique-string>`
 * `pwd` to check you are in there
+* I will do `squeue` and show the jobs running
 * `srun hostname` - thats different to just `hostname` earlier, your command ran on another machine
 * how to target machines? try `srun --nodelist=gpu1 hostname` - we only get gpu1
 * issue with `srun`? It is attached to your terminal, if you leave, it exits the job, try `srun sleep 10`
-* `sbatch` does jobs in background, but we need to give it a script to run, I have some example scripts `git clone <git-url>`
+* `sbatch` does jobs in background, but we need to give it a script to run, I have some example scripts `git clone https://github.com/reside-ic/slurm-cluster-training.git`
 * what is in this repo? `cd <folder>` then `ls` and then `cat <script>`
+* `sbatch sleep-script` check to see your job id is on `squeue`
 * `echo hello` prints hello, try it
 * `srun echo hello` prints hello but on another machine and you get the output to your terminal
+* where does output from `sbatch hello-script` go? That file from earlier!
