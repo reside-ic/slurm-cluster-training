@@ -1,0 +1,4 @@
+#!/bin/bash
+#SBATCH --nodelist=gpu1
+
+echo hello from $(hostname) > saved_file.txt

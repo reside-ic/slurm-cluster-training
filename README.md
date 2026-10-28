@@ -40,9 +40,10 @@ Demo time - refer to architecture diagram during this
 * `sbatch` does jobs in background, but we need to give it a script to run, I have some example scripts `git clone https://github.com/reside-ic/slurm-cluster-training.git`
 * what is in this repo? `cd <folder>` then `ls` and then `cat <script>`
 * `sbatch sleep-script` check to see your job id is on `squeue`
+* we get a file? delete it for now, its empty `rm <file>`
 * `echo hello` prints hello, try it
 * `srun echo hello` prints hello but on another machine and you get the output to your terminal
-* where does output from `sbatch hello-script` go? That file from earlier!
+* where does output from `sbatch hello-script` go? That file from earlier! `cat <file>`
 
 
 If extra time
