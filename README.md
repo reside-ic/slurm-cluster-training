@@ -16,7 +16,7 @@ What is a cluster?
 * Workers run code for you
 
 
-Docs for cluster are at: https://github.com/reside-ic/cluster-docs
+Docs for cluster are [here](https://github.com/reside-ic/cluster-docs)
 
 
 Let's talk about the architecture
@@ -30,7 +30,7 @@ Demo time - refer to architecture diagram during this
 
 * `ssh hpc1@wpia-lxhn.hpc.dide.ic.ac.uk` with password in the teams chat
 * `hostname` to see name of machine
-* `klist` to see your ticket
+* `klist` to see your ticket - explain different dates
 * `mkdir <some-unique-string>` and then `cd <some-unique-string>`
 * `pwd` to check you are in there
 * I will do `squeue` and show the jobs running
@@ -43,3 +43,9 @@ Demo time - refer to architecture diagram during this
 * `echo hello` prints hello, try it
 * `srun echo hello` prints hello but on another machine and you get the output to your terminal
 * where does output from `sbatch hello-script` go? That file from earlier!
+
+
+If extra time
+* explain ticket renewal with `auks -g` to get ticket and `auks -a` to add new ticket
+* CPU only jobs require `--partition=cpu` flag
+* 2TB user limit and 7 day time limit on jobs so checkpointing is recommended
