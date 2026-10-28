@@ -44,6 +44,7 @@ Demo time - refer to architecture diagram during this
 * `echo hello` prints hello, try it
 * `srun echo hello` prints hello but on another machine and you get the output to your terminal
 * where does output from `sbatch hello-script` go? That file from earlier! `cat <file>`
+* we can also save files, try `sbatch file-script`, you will see it produced "saved_file.txt"
 
 
 If extra time
